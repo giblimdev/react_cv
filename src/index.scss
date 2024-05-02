@@ -1,0 +1,147 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+/**parametre par default**/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/**style appliqué a tous le document**/
+body {
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 400;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    font-weight: 600;
+  }
+  a:hover {
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 10px;
+    color: gray;
+  }
+}
+@media (max-width: 767px) {
+  // Styles spécifiques pour mobile
+  header {
+    h1 {
+      font-size: 18px; // Exemple de style spécifique pour mobile
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  // Styles spécifiques pour tablette
+  header {
+    h1 {
+      font-size: 24px; // Exemple de style spécifique pour tablette
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  // Styles spécifiques pour desktop
+  header {
+    h1 {
+      font-size: 32px; // Exemple de style spécifique pour desktop
+    }
+  }
+}
+
+/**header**/
+header {
+  width: 100%;
+}
+.header-bg {
+  background-color: #1e1e1e;
+}
+
+header h1 {
+  font-weight: 800;
+}
+header strong {
+  font-weight: 800;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+/**Accueil**/
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: center / contain no-repeat url("./asset/img/accback.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/**About**/
+.img_about {
+  width: 100%;
+  border-radius: 5px;
+}
+/**mentions**/
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+.CollapseTitre {
+  font-size: 1rem;
+  color: rgb(52, 52, 52);
+  text-align: start;
+  width: 100%;
+  border: solide 1px grey;
+}
+.CollapseTitre:hover {
+  color: rgb(3, 37, 170);
+  border: solide rgb(98, 179, 229);
+  background-color: rgb(153, 195, 238);
+}
+.collapsea {
+  font-size: 1rem;
+  color: blue;
+}
+.colcontact {
+  width: 80%;
+  margin: 10px auto;
+}
+
+/**footer**/
+footer {
+  background-color: darkgrey;
+  padding: 20px;
+}
+footer li {
+  list-style-image: url("./asset/img/chevron-right-solid.svg");
+  color: blue;
+  margin-right: 5px;
+}
+/**debug**/
+.sol {
+  border: solid red;
+}
+.solblue {
+  border: solid blue;
+}
+.solco {
+  color: white;
+  background-color: rgb(100, 54, 54);
+}
