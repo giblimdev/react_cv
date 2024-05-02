@@ -1,61 +1,55 @@
 import React from "react";
+
 function Header() {
   return (
-    <>
-      <div className="solblue  container-fluid navbar  navbar-dark bg-dark">
-        <div className="sol text-center">
-          <a className="navbar-brand" href="#header">
-            JOHN DOE
-          </a>
-        </div>
-        <div className="sol ">
+    <header>
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div className="container-fluid">
+          <div className="navbar-brand text-uppercase">John doe</div>
+
           <button
-            class=" navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav m-auto">
+              <li className="nav-item">
+                <a className="nav-link text-uppercase" href="#">
+                  Accueil
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-uppercase" href="#">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-uppercase" href="#">
+                  Réalisations
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-uppercase" href="#">
+                  Blog
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-uppercase" href="#">
+                  Me contacter
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul className="nav text-uppercase ul">
-            <li className="">
-              <a className="" href="#accueil">
-                Accueil
-              </a>
-            </li>
-            <li className="">
-              <a className="" href="#services">
-                Services
-              </a>
-            </li>
-            <li className="">
-              <a className="" href="#realisation">
-                Réalisation
-              </a>
-            </li>
-            <li className="">
-              <a className="" href="#blog">
-                Blog
-              </a>
-            </li>
-            <li className="">
-              <a className="" href="#contact">
-                Me contacter
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="sol solco mt-3">
-        <h1 className="sol">1</h1>
-        <h2 className="solblue">2</h2>
-      </div>
-    </>
+      </nav>
+    </header>
   );
 }
 

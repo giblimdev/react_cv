@@ -1,6 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
 
 /**parametre par default**/
 * {
@@ -20,7 +23,7 @@ body {
   h5,
   h6,
   strong {
-    font-weight: 600;
+    font-weight: 800;
   }
   a:hover {
     color: white;
@@ -34,20 +37,24 @@ body {
 }
 @media (max-width: 767px) {
   // Styles spécifiques pour mobile
-  header {
-    h1 {
-      font-size: 18px; // Exemple de style spécifique pour mobile
-    }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
   }
 }
 
 // Tablet
 @media (min-width: 768px) and (max-width: 991px) {
   // Styles spécifiques pour tablette
-  header {
-    h1 {
-      font-size: 24px; // Exemple de style spécifique pour tablette
-    }
+  li {
+    font-size: 18px; // Exemple de style spécifique pour tablette
   }
 }
 
@@ -55,31 +62,13 @@ body {
 @media (min-width: 992px) {
   // Styles spécifiques pour desktop
   header {
-    h1 {
-      font-size: 32px; // Exemple de style spécifique pour desktop
+    li {
+      font-size: 18px; // Exemple de style spécifique pour desktop
     }
   }
 }
-
 /**header**/
-header {
-  width: 100%;
-}
-.header-bg {
-  background-color: #1e1e1e;
-}
 
-header h1 {
-  font-weight: 800;
-}
-header strong {
-  font-weight: 800;
-  color: black;
-}
-
-a:hover {
-  color: white;
-}
 /**Accueil**/
 .bg-image {
   background-repeat: no-repeat;
@@ -123,15 +112,31 @@ a:hover {
   width: 80%;
   margin: 10px auto;
 }
+/**Contacte**/
+.contact {
+  width: 80%;
+  margin: auto;
+}
+.contacth1 {
+  font-weight: 400;
+}
+.contactmetitre {
+  width: 80%;
+  margin: auto;
+}
+.ifram_box {
+  width: 90%;
+  margin: auto;
+}
 
 /**footer**/
 footer {
-  background-color: darkgrey;
+  background-color: rgb(238, 238, 238);
   padding: 20px;
 }
 footer li {
   list-style-image: url("./asset/img/chevron-right-solid.svg");
-  color: blue;
+  color: rgb(5, 5, 5);
   margin-right: 5px;
 }
 /**debug**/
@@ -141,7 +146,7 @@ footer li {
 .solblue {
   border: solid blue;
 }
-.solco {
+.sol1 {
   color: white;
   background-color: rgb(100, 54, 54);
 }

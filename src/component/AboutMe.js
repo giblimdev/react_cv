@@ -5,11 +5,10 @@ function AboutMe() {
       <div id="aboutme" className="container mx-auto">
         <div className="row">
           <div className="col-6">
-            <div className="borderbotom">
-              <h2>
-                <strong> A propos</strong>{" "}
-              </h2>
-            </div>
+            <h1 className="border-bottom border-2 border-primary">
+              <strong> A propos</strong>{" "}
+            </h1>
+
             <p>
               Passionné par l’informatique et les nouvelles technologies, j’ai
               suivi une formation d’<strong>intégrateur-développeur web</strong>{" "}
@@ -27,10 +26,13 @@ function AboutMe() {
               j’écris et je respecte les bonnes pratiques du web.
             </p>
           </div>
-          <div className="col-6">
+          <div className="col-6 fs-7">
             <img className="img_about" src={MoiTravail} alt="moi au travail" />
 
-            <h2> Mes compétences</h2>
+            <h2>
+              {" "}
+              <strong>Mes compétences</strong>
+            </h2>
             <div>HTML5 90%</div>
             <div className="progress">
               <div
