@@ -1,10 +1,10 @@
 import React from "react";
-import MyImage1 from "../asset/img/1.jpg";
-import MyImage2 from "../asset/img/2.jpg";
-import MyImage3 from "../asset/img/2.jpg";
-import MyImage4 from "../asset/img/2.jpg";
-import MyImage5 from "../asset/img/2.jpg";
-import MyImage6 from "../asset/img/2.jpg";
+import MyImage1 from "../asset/img/code.jpg";
+import MyImage2 from "../asset/img/money.jpg";
+import MyImage3 from "../asset/img/ordigoogle.jpg";
+import MyImage4 from "../asset/img/pctable.jpg";
+import MyImage5 from "../asset/img/seo.jpg";
+import MyImage6 from "../asset/img/patch.png";
 
 function TheBlog() {
   const articles = [
@@ -37,7 +37,7 @@ function TheBlog() {
       titre: "Coder en responsive desing",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      img: MyImage3,
+      img: MyImage4,
       date: "31 juillet 2022",
     },
     {
@@ -45,7 +45,7 @@ function TheBlog() {
       titre: "Technique de référencement",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      img: MyImage3,
+      img: MyImage5,
       date: "30 juillet 2022",
     },
     {
@@ -53,7 +53,7 @@ function TheBlog() {
       titre: "Apprendre à coder",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      img: MyImage3,
+      img: MyImage6,
       date: "12 juillet 2022",
     },
   ];
@@ -64,7 +64,7 @@ function TheBlog() {
       <p className="text-center">
         Retrouvez ici quelques articles sur le développement web.
       </p>
-      <div className="borderbottom"></div>
+      <div className="hr"></div>
       <div
         className="container-fluid d-flex flex-wrap justify-content-center"
         style={{ maxWidth: "80%" }}

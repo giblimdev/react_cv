@@ -1,6 +1,6 @@
-import logoGit from "../asset/img/github.svg";
-import logoX from "../asset/img/square-x-twitter.svg";
-import logolink from "../asset/img/linkedin.svg";
+import logoGit from "../asset/img/icon/github.svg";
+import logoX from "../asset/img/icon/square-x-twitter.svg";
+import logolink from "../asset/img/icon/linkedin.svg";
 function TheFooter() {
   return (
     <>

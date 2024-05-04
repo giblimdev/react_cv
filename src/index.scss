@@ -13,73 +13,130 @@
 }
 /**style appliqué a tous le document**/
 body {
+  background-color: rgb(239, 243, 254);
   font-family: "Nunito sans", sans-serif;
   font-weight: 400;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong {
-    font-weight: 800;
-  }
-  a:hover {
-    color: white;
-  }
-  a {
-    text-decoration: none;
-    margin: 10px;
-    font-size: 10px;
-    color: gray;
-  }
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 800;
+}
+a:hover {
+  color: white;
+}
+a {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 10px;
+  color: gray;
+}
+.hr {
+  margin: 1rem 5rem;
+  border: solid 2px blue;
+}
+
+// mobile
 @media (max-width: 767px) {
-  // Styles spécifiques pour mobile
-  h1 {
-    font-size: 1.2rem;
+  li {
+    font-size: 10px; // Exemple de style spécifique pour tablette
   }
-  h2 {
-    font-size: 1rem;
+  .header_mask {
+    height: 66px;
+    background-color: red;
   }
-  img {
-    width: 25px;
-    height: 25px;
-    margin: 0 5px;
+  .bg-image {
+    background: center url("./asset/img/accback_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .about_contenaire {
+    margin: 10px auto;
+    width: 90%;
+    display: block;
   }
 }
 
 // Tablet
 @media (min-width: 768px) and (max-width: 991px) {
-  // Styles spécifiques pour tablette
   li {
-    font-size: 18px; // Exemple de style spécifique pour tablette
+    font-size: 24px;
+  }
+  .header_mask {
+    height: 156px;
+    background-color: red;
+  }
+  .bg-image {
+    background: center url("./asset/img/accback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
-
 // Desktop
 @media (min-width: 992px) {
   // Styles spécifiques pour desktop
-  header {
-    li {
-      font-size: 18px; // Exemple de style spécifique pour desktop
-    }
+
+  li {
+    font-size: 18px;
+  }
+  .header_mask {
+    height: 256px;
+    background-color: red;
+  }
+  .bg-image {
+    background: center url("./asset/img/accback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 /**header**/
-
+.nav_txt {
+  color: rgb(17, 17, 17);
+}
 /**Accueil**/
-.bg-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: center / contain no-repeat url("./asset/img/accback.jpg");
-  background-color: rgba(0, 0, 0, 0.3);
+.accueil_contener {
+  border: solid;
+  width: 100%;
+}
+.accueil_box {
+  width: 90%;
+  margin: 250px auto;
 }
 /**About**/
+.about_box {
+  background-color: rgb(255, 248, 248);
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 .img_about {
   width: 100%;
+  height: auto;
   border-radius: 5px;
+}
+//Portfolio
+.img {
+  width: 100%;
+  border-radius: 5px;
+}
+.fond {
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: center / contain no-repeat url("./asset/img/fond.jpeg");
 }
 /**mentions**/
 .collapse {
@@ -113,12 +170,20 @@ body {
   margin: 10px auto;
 }
 /**Contacte**/
+.contact_section {
+  background-color: rgb(58, 78, 168);
+  padding: 10px 5px;
+}
 .contact {
   width: 80%;
   margin: auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
+
 .contacth1 {
-  font-weight: 400;
+  font-weight: 600;
 }
 .contactmetitre {
   width: 80%;
@@ -128,14 +193,18 @@ body {
   width: 90%;
   margin: auto;
 }
+iframe {
+  margin: auto;
+}
 
 /**footer**/
 footer {
   background-color: rgb(238, 238, 238);
+  margin-top: 10px;
   padding: 20px;
 }
 footer li {
-  list-style-image: url("./asset/img/chevron-right-solid.svg");
+  list-style-image: url("./asset/img/icon/chevron-right-solid.svg");
   color: rgb(5, 5, 5);
   margin-right: 5px;
 }
@@ -143,10 +212,15 @@ footer li {
 .sol {
   border: solid red;
 }
-.solblue {
-  border: solid blue;
+.sol2 {
+  border: solid green;
 }
-.sol1 {
+.sol3 {
   color: white;
   background-color: rgb(100, 54, 54);
+}
+.logo_img {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
 }

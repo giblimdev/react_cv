@@ -1,7 +1,7 @@
 import React from "react";
-import p1 from "../asset/img/1.jpg";
-import p2 from "../asset/img/2.jpg";
-import p3 from "../asset/img/2.jpg";
+import freshfood from "../asset/img/freshfood.jpg";
+import akira from "../asset/img/akira.jpeg";
+import bienetre from "../asset/img/bienetre.jpg";
 
 function TheRealisations() {
   const articles = [
@@ -9,14 +9,14 @@ function TheRealisations() {
       id_article: 1,
       titre: "Fresh food",
       description: "Réalisation d'un site avec commande en ligne.",
-      img: p1,
+      img: freshfood,
       techno: "Site réalisé avec PHP et MySQL",
     },
     {
       id_article: 2,
       titre: "Restaurent Akira",
       description: "Réalisation d'un site vitrine.",
-      img: p2,
+      img: akira,
       techno: "Site réalisé avec WoedPress",
     },
     {
@@ -24,16 +24,17 @@ function TheRealisations() {
       titre: "Espace bien-être",
       description:
         "Réalisation d'un site vitrine pour un praticien de bien-être.",
-      img: p3,
+      img: bienetre,
       techno: "Site réalisé en HTML/CSS",
     },
   ];
 
   return (
     <>
+      <div className="fond"></div>
       <h1 className="text-center">PORTFOLIO</h1>
       <p className="text-center">Voici quelleques-unes de mes réalisation.</p>
-
+      <div className="hr"></div>
       <div
         className="container-fluid d-flex flex-wrap justify-content-center"
         style={{ maxWidth: "80%" }}
@@ -44,11 +45,13 @@ function TheRealisations() {
             style={{ width: "200px" }}
             key={article.id_article}
           >
-            <img
-              src={article.img}
-              alt={article.titre}
-              className="card-img-top"
-            />
+            <div className="porfolio_image">
+              <img
+                src={article.img}
+                alt={article.titre}
+                className="card-img-top"
+              />
+            </div>
             <h2>{article.titre}</h2>
             <p>{article.description}</p>
             <button className="btn btn-outline-primary">Voir</button>

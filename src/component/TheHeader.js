@@ -21,28 +21,28 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#">
+                <a className="nav-link text-uppercase" href="#accueil">
                   Accueil
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#">
+                <a className="nav-link text-uppercase" href="#service">
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#">
+                <a className="nav-link text-uppercase" href="#realisation">
                   Réalisations
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#">
+                <a className="nav-link text-uppercase" href="#blog">
                   Blog
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#">
-                  Me contacter
+                <a className="nav-link text-uppercase" href="#contact">
+                  Me_contacter
                 </a>
               </li>
             </ul>
