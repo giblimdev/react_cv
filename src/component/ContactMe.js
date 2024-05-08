@@ -29,17 +29,17 @@ function ContactMe() {
   return (
     <>
       <div id="Notfound" class="header_mask"></div>
-      <div id="contact" class="header_mask"></div>
-      <div className="contact_section">
-        <div className="contact">
+
+      <div className=" contact">
+        <div className="contact_content">
           <h1 className="contacth1 text-center">ME CONTACTER</h1>
           <p className="text-center">
             Pour me contacter en vue d'un entretien ou d'une future
             collaboration, merci de remplir le formulaire de contact.
           </p>
           <div className="hr"></div>
-          <div className="contact-contener p-3">
-            <div class="contact-box">
+          <div className="contact_contenant-box p-3">
+            <div class="contact_box">
               <h2 className="contactmetitre border-bottom border-primary p-3 mb-4">
                 Formulaire de contact
               </h2>
@@ -106,7 +106,7 @@ function ContactMe() {
                 </div>
               </form>
             </div>
-            <div className="contact-box">
+            <div className="contact_box">
               <h2 className=" contactmetitre border-bottom border-primary p-3 mb-4">
                 Mes coordonnées
               </h2>
