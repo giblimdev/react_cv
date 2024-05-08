@@ -28,82 +28,85 @@ function ContactMe() {
 
   return (
     <>
+      <div id="Notfound" class="header_mask"></div>
+      <div id="contact" class="header_mask"></div>
       <div className="contact_section">
-        <div className=" contact">
+        <div className="contact">
           <h1 className="contacth1 text-center">ME CONTACTER</h1>
           <p className="text-center">
             Pour me contacter en vue d'un entretien ou d'une future
             collaboration, merci de remplir le formulaire de contact.
           </p>
           <div className="hr"></div>
-          <div className="p-3">
-            <h2 className="contactmetitre border-bottom border-primary p-3 mb-4">
-              Formulaire de contact
-            </h2>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="Entrez votre nom"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  placeholder="Entrez votre email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="tel"
-                  className="form-control"
-                  id="tel"
-                  placeholder="Votre numéro de téléphone"
-                  value={tel}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="subject"
-                  placeholder="Sujet"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  className="form-control"
-                  id="message"
-                  placeholder="Messsage"
-                  rows="3"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
-              </div>
-              <div class="d-flex justify-content-center">
-                <button type="submit" className=" btn btn-primary btn-contac">
-                  Envoyer
-                </button>
-              </div>
-            </form>
-
-            <div className="">
+          <div className="contact-contener p-3">
+            <div class="contact-box">
+              <h2 className="contactmetitre border-bottom border-primary p-3 mb-4">
+                Formulaire de contact
+              </h2>
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    placeholder="Entrez votre nom"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    placeholder="Entrez votre email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="tel"
+                    className="form-control"
+                    id="tel"
+                    placeholder="Votre numéro de téléphone"
+                    value={tel}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="subject"
+                    placeholder="Sujet"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    placeholder="Messsage"
+                    rows="3"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" className=" btn btn-primary btn-contac">
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div className="contact-box">
               <h2 className=" contactmetitre border-bottom border-primary p-3 mb-4">
                 Mes coordonnées
               </h2>

@@ -60,6 +60,7 @@ function TheBlog() {
 
   return (
     <>
+      <div id="blog" class="header_mask"></div>
       <h1 className="text-center">Blog</h1>
       <p className="text-center">
         Retrouvez ici quelques articles sur le développement web.
@@ -71,18 +72,24 @@ function TheBlog() {
       >
         {articles.map((article) => (
           <div
-            className="card m-2"
-            style={{ width: "200px" }}
+            className="card m-2 shadow-sm"
+            style={{ width: "250px" }}
             key={article.id_article}
           >
-            <img
-              src={article.img}
-              alt={article.titre}
-              className="card-img-top"
-            />
-            <h2>{article.titre}</h2>
-            <p>{article.description}</p>
-            <button className="btn-primary">Lire la suite</button>
+            <div className="blog_img-size">
+              <img
+                src={article.img}
+                alt={article.titre}
+                className="card-img-top"
+              />
+            </div>
+            <div className="blog_titre-size">
+              <h2>{article.titre}</h2>
+            </div>
+            <div className="blog_descrition-size">
+              <p>{article.description}</p>
+            </div>
+            <button className="btn btn-primary btn-sm">Lire la suite</button>
             <p>{article.date}</p>
           </div>
         ))}

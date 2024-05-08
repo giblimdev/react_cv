@@ -31,6 +31,7 @@ function TheRealisations() {
 
   return (
     <>
+      <div id="ortfolio" class="header_mask"></div>
       <div className="fond"></div>
       <h1 className="text-center">PORTFOLIO</h1>
       <p className="text-center">Voici quelleques-unes de mes réalisation.</p>
@@ -39,6 +40,7 @@ function TheRealisations() {
         className="container-fluid d-flex flex-wrap justify-content-center"
         style={{ maxWidth: "80%" }}
       >
+        <div id="blog" class="header_mask"></div>
         {articles.map((article) => (
           <div
             className="card m-2"
@@ -46,14 +48,20 @@ function TheRealisations() {
             key={article.id_article}
           >
             <div className="porfolio_image">
-              <img
-                src={article.img}
-                alt={article.titre}
-                className="card-img-top"
-              />
+              <div className="img-size">
+                <img
+                  src={article.img}
+                  alt={article.titre}
+                  className="card-img-top"
+                />
+              </div>
             </div>
-            <h2>{article.titre}</h2>
-            <p>{article.description}</p>
+            <div className="titre-size">
+              <h2>{article.titre}</h2>
+            </div>
+            <div className="descrition-size">
+              <p>{article.description}</p>
+            </div>
             <button className="btn btn-outline-primary">Voir</button>
             <p class="card-footer">{article.techno}</p>
           </div>

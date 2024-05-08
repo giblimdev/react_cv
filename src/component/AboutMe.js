@@ -2,10 +2,11 @@ import MoiTravail from "../asset/img/MoiTravail.jpg";
 function AboutMe() {
   return (
     <>
-      <div id="aboutme" className="about_contenaire">
-        <div className="about_box col-6">
+      <div id="aboutme" class="header_mask"></div>
+      <div className="about_contener">
+        <div className="about_box">
           <h1 className="border-bottom border-2 border-primary">
-            <strong> A propos</strong>{" "}
+            <strong> A propos</strong>
           </h1>
 
           <p>
@@ -25,9 +26,8 @@ function AboutMe() {
             j’écris et je respecte les bonnes pratiques du web.
           </p>
         </div>
-        <div className="about_box col-6 fs-7">
+        <div className="about_box fs-7">
           <div className="mx-auto">
-            {" "}
             <img className="img_about " src={MoiTravail} alt="moi au travail" />
           </div>
 

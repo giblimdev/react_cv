@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <div className="navbar-brand text-uppercase">John doe</div>
-
+          <Link to="/" className="nav-link text-uppercase">
+            <div className="navbar-brand text-uppercase">John doe</div>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,29 +23,29 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#accueil">
+                <Link to="/" className="nav-link text-uppercase">
                   Accueil
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#service">
+                <Link to="/offre" className="nav-link text-uppercase">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#realisation">
+                <Link to="/portfolio" className="nav-link text-uppercase">
                   Réalisations
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#blog">
+                <Link to="/blog" className="nav-link text-uppercase">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" href="#contact">
+                <Link to="/contact" className="nav-link text-uppercase">
                   Me_contacter
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
