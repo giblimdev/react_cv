@@ -1,4 +1,5 @@
 import MoiTravail from "../asset/img/MoiTravail.jpg";
+import MyGithub from "./MyGithub";
 function AboutMe() {
   return (
     <>
@@ -25,6 +26,9 @@ function AboutMe() {
             J’accorde une attention particulière à la qualité du code que
             j’écris et je respecte les bonnes pratiques du web.
           </p>
+          <div>
+            <MyGithub />
+          </div>
         </div>
         <div className="about_box fs-7">
           <div className="mx-auto">

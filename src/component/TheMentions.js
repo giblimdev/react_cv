@@ -9,8 +9,7 @@ import {
 function TheMentions() {
   return (
     <>
-      <div id="Mentions" class="header_mask"></div>
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-10">
         <h1>MENTIONS LEGALES</h1>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">

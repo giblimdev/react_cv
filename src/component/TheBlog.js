@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MyImage1 from "../asset/img/code.jpg";
 import MyImage2 from "../asset/img/money.jpg";
 import MyImage3 from "../asset/img/ordigoogle.jpg";
@@ -7,6 +7,17 @@ import MyImage5 from "../asset/img/seo.jpg";
 import MyImage6 from "../asset/img/patch.png";
 
 function TheBlog() {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState(null);
+
+  const handleOpenModal = (article) => {
+    setShowModal(true);
+    setSelectedArticle(article);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   const articles = [
     {
       id_article: 1,
@@ -87,12 +98,55 @@ function TheBlog() {
               <h2>{article.titre}</h2>
             </div>
             <div className="blog_descrition-size">
-              <p>{article.description}</p>
+              <p>{article.description.slice(0, 100)}...</p>
             </div>
-            <button className="btn btn-primary btn-sm">Lire la suite</button>
+            <button
+              className="btn btn-primary btn-sm"
+              onClick={() => handleOpenModal(article)}
+            >
+              Lire la suite
+            </button>
             <p>{article.date}</p>
           </div>
         ))}
+      </div>
+
+      {/* Modal */}
+      <div className="modal fade" id="articleModal" show={showModal}>
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">{selectedArticle?.titre}</h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                onClick={handleCloseModal}
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <img
+                src={selectedArticle?.img}
+                alt={selectedArticle?.titre}
+                className="img-fluid"
+              />
+              <p>{selectedArticle?.description}</p>
+              <p>Date de publication: {selectedArticle?.date}</p>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+                onClick={handleCloseModal}
+              >
+                Fermer
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

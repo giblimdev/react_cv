@@ -9,6 +9,7 @@ import Contact from "./component/ContactMe.js";
 import TheFooter from "./component/TheFooter.js";
 import AboutMe from "./component/AboutMe.js";
 import NotFound from "./component/NotFound.js";
+import TheMentions from "./component/TheMentions.js";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <TheMentions />
       <TheFooter />
     </div>
   );
