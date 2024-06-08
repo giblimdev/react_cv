@@ -127,11 +127,13 @@ function TheBlog() {
               </button>
             </div>
             <div className="modal-body">
-              <img
-                src={selectedArticle?.img}
-                alt={selectedArticle?.titre}
-                className="img-fluid"
-              />
+              <div className="img-size">
+                <img
+                  src={selectedArticle?.img}
+                  alt={selectedArticle?.titre}
+                  className=""
+                />
+              </div>
               <p>{selectedArticle?.description}</p>
               <p>Date de publication: {selectedArticle?.date}</p>
             </div>
