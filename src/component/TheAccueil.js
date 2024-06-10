@@ -11,6 +11,7 @@ function TheAccueil() {
         </p>
         <Link to="/aboutme" className="nav-link text-uppercase">
           <button className="btn btn-primary btn-sm">En savoir plus</button>
+          <p className="text-white">hello</p>
         </Link>
       </div>
     </div>
