@@ -1,6 +1,5 @@
-// Profil.js
 import React, { useState, useEffect } from "react";
-//import avatar from "https://avatars.githubusercontent.com/u/19842736?v=4";
+
 import avatar from "../asset/img/notfound.png";
 const Profil = () => {
   const [profileData, setProfileData] = useState(null);
