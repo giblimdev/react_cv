@@ -15,7 +15,7 @@ function ContactMe() {
     // Envoyer les données du formulaire à votre backend ou effectuer toute autre action
     console.log("Nom :", name);
     console.log("Email :", email);
-    console.log("Email :", tel);
+    console.log("Tel :", tel);
     console.log("Sujet :", subject);
     console.log("Message :", message);
     // Réinitialiser les champs du formulaire après la soumission
@@ -73,7 +73,7 @@ function ContactMe() {
                     id="tel"
                     placeholder="Votre numéro de téléphone"
                     value={tel}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setTel(e.target.value)}
                     required
                   />
                 </div>

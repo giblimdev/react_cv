@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import avatar from "../asset/img/notfound.png";
 const Profil = () => {
   const [profileData, setProfileData] = useState(null);
@@ -44,7 +44,11 @@ const Profil = () => {
         <p>Mofifié le : {profileData.updated_at}</p>
         <p>URL repositories : {profileData.repos_url}</p>
 
-        <button className="btn btn-primary">retouner à l'Accueil</button>
+        <Link to="/" className="nav-link text-uppercase">
+          <button className="btn btn-primary btn-sm">
+            retouner à l'Accueil
+          </button>
+        </Link>
       </div>
     </div>
   );

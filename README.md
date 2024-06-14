@@ -33,4 +33,10 @@ Pour lancer l'application, exécutez la commande suivante dans le répertoire du
 
 ```bash
 npm start
+
+
 ```
+
+## utiliseer ce lien pour tester l'app
+
+https://cvreact-cfd54.web.app
